@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="lbx-zF-LJu" customClass="SiderBarFooterView" customModule="ofo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="249" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RedPacketBike" translatesAutoresizingMaskIntoConstraints="NO" id="MFL-5n-AzA">
+                    <rect key="frame" x="0.0" y="0.0" width="249" height="120"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="MFL-5n-AzA" firstAttribute="top" secondItem="sDT-e3-o1O" secondAttribute="top" id="B76-a1-JzW"/>
+                <constraint firstAttribute="bottom" secondItem="MFL-5n-AzA" secondAttribute="bottom" id="OFk-9S-0MT"/>
+                <constraint firstItem="MFL-5n-AzA" firstAttribute="leading" secondItem="sDT-e3-o1O" secondAttribute="leading" id="Rfl-Uc-bwu"/>
+                <constraint firstItem="MFL-5n-AzA" firstAttribute="bottom" secondItem="sDT-e3-o1O" secondAttribute="bottom" id="beG-zn-MId"/>
+                <constraint firstItem="MFL-5n-AzA" firstAttribute="top" secondItem="lbx-zF-LJu" secondAttribute="top" id="q96-Ix-dTh"/>
+                <constraint firstItem="sDT-e3-o1O" firstAttribute="trailing" secondItem="MFL-5n-AzA" secondAttribute="trailing" id="t87-G7-2Hp"/>
+                <constraint firstItem="MFL-5n-AzA" firstAttribute="leading" secondItem="sDT-e3-o1O" secondAttribute="leading" id="ufj-fA-SGK"/>
+                <constraint firstItem="sDT-e3-o1O" firstAttribute="trailing" secondItem="MFL-5n-AzA" secondAttribute="trailing" id="zXX-em-IdZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="sDT-e3-o1O"/>
+            <connections>
+                <outlet property="adImageView" destination="MFL-5n-AzA" id="HAC-i3-62c"/>
+            </connections>
+            <point key="canvasLocation" x="-144.5" y="-140"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="RedPacketBike" width="340" height="135"/>
+    </resources>
+</document>
